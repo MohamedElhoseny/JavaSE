@@ -1,0 +1,1 @@
+stream_id = this is a trial example only if i want to get data to use to connect to specific to URL  so i must encode it to prevent MalformedException

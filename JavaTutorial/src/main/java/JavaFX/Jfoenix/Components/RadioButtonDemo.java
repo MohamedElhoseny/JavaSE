@@ -1,0 +1,61 @@
+package JavaFX.Jfoenix.Components;
+
+import javafx.application.Application;
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
+import javafx.geometry.Insets;
+import javafx.scene.Scene;
+import javafx.scene.control.ToggleGroup;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+import com.jfoenix.controls.JFXRadioButton;
+
+public class RadioButtonDemo extends Application {
+	@Override
+	public void start(Stage primaryStage) {
+		try {
+			final ToggleGroup group = new ToggleGroup();
+
+			JFXRadioButton javaRadio = new JFXRadioButton("JavaFX");
+			javaRadio.setPadding(new Insets(10));
+			javaRadio.setToggleGroup(group);  //ahm method ahe
+
+			JFXRadioButton jfxRadio = new JFXRadioButton("JFoenix");
+			jfxRadio.setPadding(new Insets(10));
+			jfxRadio.setToggleGroup(group);
+
+
+            javaRadio.setOnAction(event -> {
+               System.out.println(javaRadio.getText() + "is selected");
+            });
+
+
+
+			HBox hbox = new HBox();
+			VBox vbox = new VBox();
+			vbox.getChildren().add(javaRadio);
+			vbox.getChildren().add(jfxRadio);
+			vbox.setSpacing(10);
+			hbox.getChildren().add(vbox);
+			hbox.setSpacing(50);
+			hbox.setPadding(new Insets(40, 10, 10, 120));
+			
+			Scene scene = new Scene(hbox);
+			primaryStage.setScene(scene);
+			primaryStage.setWidth(500);
+			primaryStage.setHeight(400);
+			primaryStage.setTitle("JFX RadioButton Demo ");			
+			scene.getStylesheets().add(RadioButtonDemo.class.getResource("/resources/css/jfoenix-components.css").toExternalForm());
+
+			primaryStage.show();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void main(String[] args) {
+		launch(args);
+	}
+}

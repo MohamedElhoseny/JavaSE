@@ -1,0 +1,29 @@
+@import url('http://fonts.googleapis.com/css?family=Kavoon');
+
+.root
+{
+    -fx-background-color: cornflowerblue;
+    -fx-effect: dropshadow(two-pass-box, yellow, 10, 1.0, 100, 100);
+}
+.label
+{
+    -fx-text-fill: white;
+}
+.text-field
+{
+    -fx-border-style: solid;
+    -fx-border-color: crimson;
+    -fx-border-width: 5px;
+    -fx-border-radius: 50px;
+    -fx-background-color: inherit;
+    -fx-prompt-text-fill: yellow;
+    -fx-text-fill: white;
+    -fx-font-family: kavoon;
+    -fx-font-weight: 200;
+}
+#n_error
+{
+    -fx-font-family: serif;
+    -fx-font-style: oblique;
+    -fx-text-fill: cyan;
+}

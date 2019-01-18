@@ -1,0 +1,2 @@
+1@Ayman@Ezzat@30@8000.0@Mon 12pm to 2pm@CS@Prof_1@12345678@
+2@Waleed@Youssef@35@8500.0@Mon 2pm to 6pm@CS@Prof_2@12345679@

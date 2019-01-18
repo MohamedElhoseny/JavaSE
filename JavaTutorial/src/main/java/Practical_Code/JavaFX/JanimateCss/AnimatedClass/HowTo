@@ -1,0 +1,59 @@
+//FadeIn
+
+TimelineBuilder.create().keyFrames
+(new KeyFrame[]
+  {new KeyFrame(Duration.millis(0.0D), new KeyValue[]{new KeyValue(node.opacityProperty(), Integer.valueOf(0), WEB_EASE)}),
+  new KeyFrame(Duration.millis(1000.0D), new KeyValue[]{new KeyValue(node.opacityProperty(), Integer.valueOf(1), WEB_EASE)})}
+).build()
+
+
+////css///
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn
+{
+  animation-name: fadeIn;
+}
+
+
+////////////////////////////////////////////
+
+//FadeInDown
+   super(node, TimelineBuilder.create().keyFrames(new KeyFrame[]{
+   new KeyFrame(Duration.millis(0.0D),
+   new KeyValue[] {
+   new KeyValue(node.opacityProperty(), Integer.valueOf(0), WEB_EASE),
+   new KeyValue(node.translateYProperty(), Integer.valueOf(-20), WEB_EASE)}),
+
+   new KeyFrame(Duration.millis(1000.0D),
+   new KeyValue[]{
+   new KeyValue(node.opacityProperty(), Integer.valueOf(1), WEB_EASE),
+   new KeyValue(node.translateYProperty(), Integer.valueOf(0), WEB_EASE)})}
+
+   ).build());
+
+
+ //css
+   @keyframes fadeInDown {
+     from {
+       opacity: 0;
+       transform: translate3d(0, -100%, 0);
+     }
+
+     to {
+       opacity: 1;
+       transform: none;
+     }
+   }
+
+   .fadeInDown {
+     animation-name: fadeInDown;
+   }

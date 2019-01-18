@@ -1,0 +1,23 @@
+ .btn
+{
+    -fx-background-color:
+            #083156,
+            #657c87,
+            #46626f,
+            #123,
+            linear-gradient(#234,#345,#234),
+            linear-gradient(from 30% -10% to 70% 110%, rgba(100,155,155,0), rgba(100,155,155,.1) 50%, rgba(0,0,0,0) 50%);
+    -fx-text-fill: white;
+
+}
+.stackpane .label{
+   -fx-font-family: Elephant;
+}
+
+.stackpane{
+    -fx-background-color: #657c87;
+}
+
+.grid .button :hover{
+    -fx-background-color: #44B449;
+}

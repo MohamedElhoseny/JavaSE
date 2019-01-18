@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="991.0" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Separator centerShape="false" layoutX="3.0" layoutY="193.0" pickOnBounds="false" prefHeight="14.0" prefWidth="985.0" />
+      <StackPane fx:id="animatedPane" alignment="TOP_LEFT" centerShape="false" focusTraversable="true" layoutX="226.0" layoutY="4.0" prefHeight="190.0" prefWidth="514.0" styleClass="stackpane">
+         <children>
+            <ImageView fitHeight="189.0" fitWidth="516.0" pickOnBounds="true">
+               <image>
+                  <Image url="@./wm.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox mnemonicParsing="false" prefHeight="17.0" prefWidth="110.0" text="Good" textFill="WHITE">
+               <font>
+                  <Font name="Segoe Script Bold" size="18.0" />
+               </font>
+            </CheckBox>
+         </children>
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor></StackPane>
+      <GridPane layoutX="15.0" layoutY="206.0" prefHeight="356.0" prefWidth="932.0" styleClass="grid">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton onAction="#btn28" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Flip Out y" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <JFXButton onAction="#btn19" prefHeight="31.0" prefWidth="126.0" styleClass="btn" text="Flash" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <JFXButton onAction="#btn11" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="FadeOutUp" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXButton onAction="#btn12" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="FadeOutDown" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <JFXButton onAction="#btn33" prefHeight="34.0" prefWidth="126.0" styleClass="btn" text="Bounce" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <JFXButton onAction="#btn21" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Shake" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <JFXButton onAction="#btn15" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="FadeOutUpBig" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <JFXButton onAction="#btn27" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Flip in X" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <JFXButton onAction="#btn26" prefHeight="37.0" prefWidth="127.0" ripplerFill="#ebe0e0" styleClass="btn" text="Flip" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <JFXButton onAction="#btn23" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Swing" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <JFXButton onAction="#btn22" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Tada" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <JFXButton onAction="#btn14" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="FadeOutRight" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <JFXButton onAction="#btn13" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="FadeOutLeft" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <JFXButton onAction="#btn29" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Flip in Y" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <JFXButton onAction="#btn35" prefHeight="30.0" prefWidth="127.0" styleClass="btn" text="Bounce In Up" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <JFXButton onAction="#btn36" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Bounce In Down" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <JFXButton onAction="#btn37" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Bounce In Left" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <JFXButton onAction="#btn38" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Bounce In Right" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <JFXButton onAction="#btn30" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Flip Out X" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <JFXButton onAction="#btn39" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Bounce Out" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <JFXButton onAction="#btn24" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Wobble" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <JFXButton onAction="#btn48" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Rot In Down Right" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <JFXButton onAction="#btn40" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Bounce Out up" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+            <JFXButton onAction="#btn31" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Roll In " GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <JFXButton onAction="#btn47" prefHeight="30.0" prefWidth="127.0" styleClass="btn" text="Rotate OutDownLeft" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+            <JFXButton onAction="#btn46" prefHeight="36.0" prefWidth="127.0" styleClass="btn" text="Rotate In Down Left" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <JFXButton onAction="#btn45" prefHeight="30.0" prefWidth="127.0" styleClass="btn" text="Rotate Out" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+            <JFXButton onAction="#btn44" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Rotate In" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <JFXButton onAction="#btn43" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Bounce Out Right" GridPane.columnIndex="4" GridPane.rowIndex="11" />
+            <JFXButton onAction="#btn42" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Bounce Out Left" GridPane.columnIndex="4" GridPane.rowIndex="10" />
+            <JFXButton onAction="#btn49" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Rot Out Down Right" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <JFXButton onAction="#btn41" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Bounce Out Down" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+            <JFXButton onAction="#btn34" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Bounce In" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <JFXButton onAction="#btn25" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Hinge" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <JFXButton onAction="#btn17" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="FadeOutLeftBig" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <JFXButton onAction="#btn32" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Roll Out" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <JFXButton onAction="#btn20" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Pulse" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <JFXButton onAction="#btn16" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="FadeOutDownBig" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <JFXButton onAction="#btn10" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="FadeOut" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JFXButton onAction="#btn50" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Rotate In Up left" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <JFXButton onAction="#btn1" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="FadeIn" GridPane.rowIndex="1" />
+            <JFXButton onAction="#btn2" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="FadeInUp" GridPane.rowIndex="2" />
+            <JFXButton onAction="#btn5" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="FadeInRight" GridPane.rowIndex="5" />
+            <JFXButton onAction="#btn8" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="FadeInLeftBig" GridPane.rowIndex="8" />
+            <JFXButton onAction="#btn7" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="FadeInDownBig" GridPane.rowIndex="7" />
+            <JFXButton onAction="#btn4" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="FadeInLeft" GridPane.rowIndex="4" />
+            <JFXButton onAction="#btn3" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="FadeInDown" GridPane.rowIndex="3" />
+            <JFXButton onAction="#btn6" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="FadeInUpBig" GridPane.rowIndex="6" />
+            <JFXButton onAction="#btn9" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="FadeInRightBig" GridPane.rowIndex="9" />
+            <JFXButton onAction="#btn18" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="FadeOutRightBig" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <JFXButton onAction="#btn51" prefHeight="30.0" prefWidth="127.0" styleClass="btn" text="Rotate In Up Right" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+            <JFXButton onAction="#btn52" prefHeight="37.0" prefWidth="127.0" styleClass="btn" text="Rotate Out Up Right" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+         </children>
+         <padding>
+            <Insets left="50.0" top="50.0" />
+         </padding>
+      </GridPane>
+      <Label layoutX="370.0" layoutY="200.0" text="Attentions">
+         <font>
+            <Font name="MT Extra" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="200.0" prefHeight="34.0" prefWidth="145.0" text="Fading entrances">
+         <font>
+            <Font name="MT Extra" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="214.0" layoutY="200.0" prefHeight="34.0" prefWidth="113.0" text="Fading exits">
+         <font>
+            <Font name="MT Extra" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="525.0" layoutY="200.0" text="Flippers">
+         <font>
+            <Font name="MT Extra" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="663.0" layoutY="200.0" text="Bouncing">
+         <font>
+            <Font name="MT Extra" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="801.0" layoutY="200.0" text="Rotations">
+         <font>
+            <Font name="MT Extra" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="565.0" prefHeight="17.0" prefWidth="135.0" text="Copyright @2016-2017" />
+   </children>
+</Pane>

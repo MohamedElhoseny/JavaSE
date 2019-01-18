@@ -1,0 +1,109 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.elhosany</groupId>
+	<artifactId>JavaTutorial</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>JavaTutorial</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+	
+		<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-controls -->
+		<dependency>
+		    <groupId>org.openjfx</groupId>
+		    <artifactId>javafx-controls</artifactId>
+		    <version>11</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-graphics -->
+		<dependency>
+		    <groupId>org.openjfx</groupId>
+		    <artifactId>javafx-graphics</artifactId>
+		    <version>11</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-base -->
+		<dependency>
+		    <groupId>org.openjfx</groupId>
+		    <artifactId>javafx-base</artifactId>
+		    <version>11</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-fxml -->
+		<dependency>
+		    <groupId>org.openjfx</groupId>
+		    <artifactId>javafx-fxml</artifactId>
+		    <version>11</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-web -->
+		<dependency>
+		    <groupId>org.openjfx</groupId>
+		    <artifactId>javafx-web</artifactId>
+		    <version>11</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-media -->
+		<dependency>
+		    <groupId>org.openjfx</groupId>
+		    <artifactId>javafx-media</artifactId>
+		    <version>11</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.openjfx/javafx-swing -->
+		<dependency>
+		    <groupId>org.openjfx</groupId>
+		    <artifactId>javafx-swing</artifactId>
+		    <version>11</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/de.jensd/fontawesomefx -->
+		<dependency>
+			<groupId>de.jensd</groupId>
+			<artifactId>fontawesomefx</artifactId>
+			<version>8.9</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.13</version>
+		</dependency>
+
+		<!-- Add local dependency -->
+		<dependency>
+			<groupId>Animation</groupId>
+			<artifactId>AnimationPackgage</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>E:/FCIH/Self-Study/Java/JavaFX/Jfoenix/Jfoenix Work Library/AnimationPackage.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>Jfoenix</groupId>
+			<artifactId>Jfoenix-lib-jar</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>E:/FCIH/Self-Study/Java/JavaFX/Jfoenix/Jfoenix Work Library/JavafxMaterialize.jar</systemPath>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.datafx/flow -->
+		<dependency>
+			<groupId>io.datafx</groupId>
+			<artifactId>flow</artifactId>
+			<version>8.0.7</version>
+		</dependency>
+	
+		<!-- Junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="344.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Practical_Code.JavaFX.Jfoenix.FXNodeAnimation.sampleController">
+   <children>
+      <VBox fx:id="main" layoutX="-3.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="347.0">
+         <children>
+            <StackPane fx:id="colorpane" prefHeight="6.0" prefWidth="351.0" style="-fx-background-color: #00c853;">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </StackPane>
+            <JFXTextField labelFloat="true" maxWidth="146.0" minWidth="146.0" prefHeight="31.0" prefWidth="146.0" promptText="Enter UserName">
+               <VBox.margin>
+                  <Insets left="20.0" top="35.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField labelFloat="true" maxWidth="179.0" minWidth="179.0" prefHeight="31.0" prefWidth="179.0" promptText="Enter Password">
+               <VBox.margin>
+                  <Insets left="20.0" top="30.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField labelFloat="true" maxWidth="198.0" minWidth="191.0" prefHeight="31.0" prefWidth="198.0" promptText="Enter Email">
+               <VBox.margin>
+                  <Insets left="20.0" top="30.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField labelFloat="true" maxWidth="216.0" minWidth="208.0" prefHeight="31.0" prefWidth="216.0" promptText="Phone Number">
+               <VBox.margin>
+                  <Insets left="20.0" top="30.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <Label text="Your Age">
+               <VBox.margin>
+                  <Insets left="30.0" top="30.0" />
+               </VBox.margin>
+            </Label>
+            <JFXSlider maxWidth="250.0" prefHeight="22.0" prefWidth="100.0">
+               <VBox.margin>
+                  <Insets left="50.0" top="10.0" />
+               </VBox.margin>
+            </JFXSlider>
+            <HBox fx:id="btnpane" prefHeight="69.0" prefWidth="350.0">
+               <children>
+                  <JFXCheckBox text="I agree ">
+                     <HBox.margin>
+                        <Insets left="25.0" top="20.0" />
+                     </HBox.margin>
+                  </JFXCheckBox>
+                  <JFXButton fx:id="reg" onAction="#onReg" prefHeight="31.0" prefWidth="129.0" ripplerFill="#e0ebdf" style="-fx-background-color: #00c853; -fx-text-fill: white;" text="Register Now">
+                     <HBox.margin>
+                        <Insets left="90.0" top="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

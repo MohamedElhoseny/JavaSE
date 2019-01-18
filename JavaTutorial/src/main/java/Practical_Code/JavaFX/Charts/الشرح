@@ -1,0 +1,29 @@
+        //Charts :- AreaChart , Bar , Bubble , Line , Pie , Scatter , StackedArea , StackedBar
+        //Charts are Two Types =>  PieChart  , XYCharts
+
+        //Creating Charts [XYCharts]:
+        /*
+              1-  Define the axis of the chart
+              2-  Instantiate the respective class
+              3-  Prepare and pass data to the chart
+         */
+
+        // 1] Axis : Classified into ValueAxis -> NumberAxis , CategoryAxis
+
+            /** CategoryAxis */
+            CategoryAxis xAxis = new CategoryAxis();
+            xAxis.setCategories(FXCollections.observableArrayList(
+                    Arrays.asList("swt","awt","swing","javafx")
+            ));
+            xAxis.setLabel("Name Of this axis");
+
+            /**NumberAxis*/
+            NumberAxis yAxis = new NumberAxis(0,15,2.5);
+            yAxis.setLabel("name of the axis");
+
+        // 2] Create an instance from any xychart you want
+      /**  AreaChart<String, Number> areaChart = new AreaChart<>(xAxis, yAxis);  */
+
+        // 3] Passing Data to xychart
+      /**   areaChart.getData().add(new XYChart.Data(x-axis data, ydata-axis ));  */
+

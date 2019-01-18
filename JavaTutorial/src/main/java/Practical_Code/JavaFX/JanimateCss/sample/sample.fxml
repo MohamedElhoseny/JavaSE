@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Practical_Code.JavaFX.JanimateCss.sample.sampleController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <center>
+
+         </center>
+         <bottom>
+            <JFXButton fx:id="btn" buttonType="RAISED" mnemonicParsing="false" onAction="#animate" prefHeight="51.0" prefWidth="102.0" ripplerFill="#eeeeee" style="-fx-background-color: green;" text="SlideInLeft" textFill="WHITE" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="25.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </bottom>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: silver;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <Label fx:id="animatedlabel" layoutX="-200.0" layoutY="114.0" text="Animate Css" textFill="#ff0d0d">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

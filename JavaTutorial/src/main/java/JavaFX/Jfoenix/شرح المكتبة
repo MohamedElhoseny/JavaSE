@@ -1,0 +1,7 @@
+
+ css
+   jfoenix-components.css  = ده هو الملف الاساسى ويستحسن انى معدلش فيه واخليه الاساسى واعمل واحد تانى واعدل على الحاجه منه
+   jfoenix-main-demo.css   = ده الملف الى فيه استايلات المثال للمكتبة ومهم جدا لانه فيه الفنكشنات الى بتغير فى الملف الاساسى
+
+
+ Note : Not all UI Components Can be used by Drag and Drop  eg: Spinner , Decorator , Badge , AwesonIcon ........

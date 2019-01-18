@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import de.jensd.fx.glyphs.weathericons.WeatherIconView?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXButton layoutX="133.0" layoutY="118.0" text="FontAwesome">
+         <graphic>
+            <FontAwesomeIconView glyphName="AREA_CHART" size="15" />
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="274.0" layoutY="118.0" text="MaterialDesignicon">
+         <graphic>
+            <MaterialDesignIconView glyphName="AMAZON" size="18" />
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="136.0" layoutY="165.0" prefHeight="47.0" prefWidth="119.0" text="Material Icon">
+         <graphic>
+            <MaterialIconView glyphName="CROP_FREE" wrappingWidth="17.701171875" />
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="300.0" layoutY="165.0" prefHeight="39.0" prefWidth="141.0" text="OCTicon">
+         <graphic>
+            <OctIconView fill="#da7726" glyphName="DATABASE" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="164.0" layoutY="230.0" prefHeight="66.0" prefWidth="190.0" text="Weather Icon">
+         <graphic>
+            <WeatherIconView glyphName="UMBRELLA" size="40" />
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="362.0" layoutY="230.0" prefHeight="66.0" prefWidth="190.0" text="Weather Icon">
+         <graphic>
+            <WeatherIconView glyphName="TIME_7" size="40" />
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="362.0" layoutY="288.0" prefHeight="66.0" prefWidth="190.0" text="Weather Icon">
+         <graphic>
+            <WeatherIconView glyphName="TIME_3" size="40" />
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="196.0" layoutY="296.0" prefHeight="66.0" prefWidth="190.0" text="Weather Icon">
+         <graphic>
+            <WeatherIconView fill="#9a4595" glyphName="SHOWERS" size="40" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

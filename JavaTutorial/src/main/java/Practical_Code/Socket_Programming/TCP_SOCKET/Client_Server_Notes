@@ -1,0 +1,43 @@
+ بسم الله الرحمن الرحيم
+
+ServerDemo1 , ClientDemo1
+ =====================
+
+ hna el Server be accept only one request and do it then close the socket ,  i want server to accept Requests all time
+ They are Two Ways To Do it :
+    1) Iterative way       2) Concurrent way
+
+
+    ServerDemo2 , ClientDemo2  Discuss the idea of iterative  , What is the disadvantage of this way ?
+     Iteration Way make the server accept more request but one at a time  so  if a request take 4 minute so the next request
+     from another Client must wait until The Server Serve the First request then Start the Next  (Not Succedded Way)
+
+
+    ServerDemo3 , ClientDemo3  Discuss the idea of Concurrent Way , What is The Adantage of this way ?
+    this way make the request occur concurrently and parallel to Server  No Client Request Need to Wait for another one to Server
+    This Way Implemented Using MutliThreading , As Main Server Only take The Request and Make a New Thread with this Socket
+    So the Job of Main Server to Listen to request and Send Socket object which refer to the Channel to new Handle that implement
+    the Runnable interface
+
+      Note That : After finishing Client request the channel still established so it can this client used it and if the
+                   Client finished the channel will terminate(4 hard way procedure) and socket remain
+  so [ Lazem n3ml 7aga check 3leha W Lw 7slt nb2a 3rfen 2nna hnw2f el While Loop 2le btfdl sh8ala m3 client dh w aydn n2fl el Socket bta3o ]
+
+
+
+  ServerDemo4 ,ClientDemo3
+  ======================
+
+  How to Send and Receive Objects using TCP ?
+  any object i will send to server Must be implement Serializable , this will convert this object as Stream of bytes so i can
+  Send it in  ObjectOutputStream  using WriteObject() Method ,  ObjectInputStream to read it using ReadObject() Method
+  => any class that this object class extended must be also Serializable (deep Serialization)
+
+  Three way to store Serializing Objects :
+  1- File using FileOutputStream
+  2- Store it in Byte Array as it converted to Stream of Byte using  ByteArrayOutputStream  (useful in DatagramPacket)
+  3- Send the serializing Data through the socket directly (useful here)
+
+   So to Recieve the Object this process called Deserialization Which Means Reconstructing Objects
+   using method readObject()  in  ObjectInputStream
+
