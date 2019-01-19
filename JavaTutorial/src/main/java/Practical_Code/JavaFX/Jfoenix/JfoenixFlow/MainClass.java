@@ -16,8 +16,8 @@ import javafx.stage.Stage;
  */
 public class MainClass extends Application
 {
-    @FXMLViewFlowContext private ViewFlowContext context;
-
+    @FXMLViewFlowContext 
+    private ViewFlowContext context;
     private Flow flow;
     private FlowHandler flowHandler;
     private DefaultFlowContainer container;

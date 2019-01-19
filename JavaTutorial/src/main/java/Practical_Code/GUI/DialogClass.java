@@ -16,7 +16,7 @@ public class DialogClass extends Dialog implements ActionListener
 	
     public DialogClass(Frame f) 
     {
-		super(f,true);  //Model Dialog
+		super(f, true);  //Model Dialog
 		this.setLayout(new FlowLayout());
 		this.setSize(200,120);
 		this.add(m); 

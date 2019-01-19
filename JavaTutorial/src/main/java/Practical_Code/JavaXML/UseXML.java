@@ -4,7 +4,6 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.StringWriter;
-import org.xml.sax.SAXException;
 
 //javax.xml.parser  Package to Create Document Object from org.w3c.dom.Document 
 
@@ -25,6 +24,7 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Text;
+import org.xml.sax.SAXException;
 
 public class UseXML 
 {
@@ -34,7 +34,7 @@ public class UseXML
         
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder parser = factory.newDocumentBuilder();    //parser =>  t7lel
-        Document doc = parser.parse("./src/Practical_Code/JavaXML/XmlDoc1.xml");            // h3ml t7lel le file XmlDoc1.xml
+        Document doc = parser.parse(UseXML.class.getResourceAsStream("XmlDoc1.xml"));            // h3ml t7lel le file XmlDoc1.xml
         
         
         Navigating_XMLDOM(doc);
@@ -64,6 +64,7 @@ public class UseXML
         
         //Getting all Child Nodes 
         NodeList children = root.getChildNodes();    
+       
         for(int i=0; i<children.getLength(); i++)
         {
             //check node type

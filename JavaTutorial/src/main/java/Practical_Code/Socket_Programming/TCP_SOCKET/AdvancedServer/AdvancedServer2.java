@@ -44,7 +44,7 @@ public class AdvancedServer2 implements Runnable
 
             //Sending Result Class and Object
             ObjectOutputStream toClient = new ObjectOutputStream(ServerEnd.getOutputStream());
-            ClassFile = "D:\\FCIH\\Self-Study\\Java\\Projects\\JavaSE\\src\\Practical_Code\\Socket_Programming\\AdvancedServer\\Resultimp.java";
+            ClassFile = AdvancedServer2.class.getResource("Resultimp.java").toString();
             FileInputStream result_file = new FileInputStream(ClassFile);  //to read Resultimp  implementation
             byte[] bb = new byte[result_file.available()];   //size of n.of byte in file
 

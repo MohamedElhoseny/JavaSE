@@ -18,7 +18,7 @@ public class SampleDemo extends Application
         FontLoader.loadFont("http://fonts.googleapis.com/css?family=Francois+One");  //font not found
         FontLoader.loadFont("http://fonts.googleapis.com/css?family=Elephant");   //loaded
  
-      //Parent root = FXMLLoader.load(getClass().getResource("Sample.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("Sample.fxml"));
 
         ViewFlowContext context = new ViewFlowContext();
         DefaultFlowContainer container = new DefaultFlowContainer();

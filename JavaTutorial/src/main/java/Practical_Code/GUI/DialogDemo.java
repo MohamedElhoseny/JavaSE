@@ -13,7 +13,8 @@ import java.awt.event.WindowEvent;
 public class DialogDemo extends Frame
 {
 	DialogClass message;
-	FileDialog  select;   //������ ���� ������ ��� ���� ������� �� ���������� ������ ���� ��� ����� �������� ��� ����� ��������� ��� ���� �� ���� ������� �� ������� �������
+	FileDialog  select;   
+	
     public DialogDemo()
     {
     	this.setVisible(true);

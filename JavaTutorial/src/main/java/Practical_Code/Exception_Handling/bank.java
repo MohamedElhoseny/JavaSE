@@ -17,10 +17,16 @@ public class bank
     }
 
 
-    public static void main(String[] args) throws InsufficientAmountException, ExcessiveAmountException {
+    public static void main(String[] args) 
+    {
         bank customer = new bank();
 
-        customer.withdraw(144000);
+        try {
+			customer.withdraw(144000);
+		} catch (InsufficientAmountException | ExcessiveAmountException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
 
 }

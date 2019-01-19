@@ -1,3 +1,5 @@
+package Practical_Code.GUI.labs;
+
 import javax.swing.*;
 import java.net.InetAddress;
 import java.net.MalformedURLException;
