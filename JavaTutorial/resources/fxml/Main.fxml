@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import com.jfoenix.transitions.hamburger.HamburgerBackArrowBasicTransition?>
+<?import de.jensd.fx.fontawesome.Icon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.String?>
+
+<StackPane fx:id="root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+
+	<BorderPane>
+
+        <!-- Header -->
+		<top>
+			<VBox spacing="20">
+				<JFXToolbar>
+
+					<leftItems>
+                        <!-- hamburger  -->
+						<JFXRippler maskType="CIRCLE" style="-fx-ripple-color:WHITE;">
+							<StackPane fx:id="titleBurgerContainer">
+								<JFXHamburger fx:id="titleBurger">
+									<HamburgerBackArrowBasicTransition />
+								</JFXHamburger>
+							</StackPane>
+						</JFXRippler>
+
+						<Label>Material Design</Label>
+
+					</leftItems>
+
+
+                    <rightItems>
+
+
+                        <JFXRippler fx:id="optionsRippler" maskType="CIRCLE" style="-fx-ripple-color:WHITE;">
+                            <StackPane fx:id="optionsBurger">
+                                <!--  Hamburger     :   -->
+                                <JFXHamburger styleClass="jfx-options-burger">   <!-- lw shelt el class hyrg3 hamburger -->
+                                </JFXHamburger>
+                            </StackPane>
+                        </JFXRippler>
+
+
+                    </rightItems>
+
+				</JFXToolbar>
+			</VBox>
+		</top>
+
+
+		<!-- Content Area -->
+		<center>
+			<JFXDrawer fx:id="drawer" defaultDrawerSize="250" direction="LEFT">
+				<styleClass>
+					<String fx:value="body"/>
+				</styleClass>
+			</JFXDrawer>
+		</center>
+
+	</BorderPane>
+
+
+	<JFXPopup fx:id="toolbarPopup" styleClass="tool-bar-popup">
+		<JFXListView styleClass="option-list-view">
+			<Label>
+				Contact Us
+				<graphic>     <!-- awesomeIcon  gnb el label -->
+					<Icon awesomeIcon="USER" size="1.5em" style=";" styleClass="option-jfx-list-view-icon" />
+				</graphic>
+			</Label>
+			<Label fx:id="exit">
+				Exit
+				<graphic>
+					<Icon awesomeIcon="REPLY" size="1.5em" style=";" styleClass="option-jfx-list-view-icon" />
+				</graphic>
+			</Label>
+		</JFXListView>
+	</JFXPopup>
+
+</StackPane>
